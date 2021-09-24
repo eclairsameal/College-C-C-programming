@@ -1,0 +1,5 @@
+MemorySize 500
+DiskSize 20000
+DataSize 10000
+InputSize 150
+OutputSize 150
