@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1	What is your favoriate soft drink?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q1_coke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Coke" />
+
+        <RadioButton
+            android:id="@+id/q1_juice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juice" />
+
+        <RadioButton
+            android:id="@+id/q1_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tea" />
+        
+        <RadioButton
+            android:id="@+id/q1_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2	What is your favoriate food?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q2_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Surface" />
+
+        <RadioButton
+            android:id="@+id/q2_rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice" />
+
+        <RadioButton
+            android:id="@+id/q2_bread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bread" />
+        
+        <RadioButton
+            android:id="@+id/q2_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 What is your favoriate movie?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q3_horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Horror" />
+
+        <RadioButton
+            android:id="@+id/q3_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action" />
+
+        <RadioButton
+            android:id="@+id/q3_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love" />
+        
+        <RadioButton
+            android:id="@+id/q3_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4	What is your favoriate music?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q4_rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Rock" />
+
+        <RadioButton
+            android:id="@+id/q4_ballad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ballad" />
+
+        <RadioButton
+            android:id="@+id/q4_jazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jazz" />
+        
+        <RadioButton
+            android:id="@+id/q4_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5	What is your favoriate game console?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q5_ps3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="PS3" />
+
+        <RadioButton
+            android:id="@+id/q5_xbox360"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xbox360" />
+
+        <RadioButton
+            android:id="@+id/q5_wii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wii" />
+        
+        <RadioButton
+            android:id="@+id/q5_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />        
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6	What is your favoriate company?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/q6_ea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="EA" />
+
+        <RadioButton
+            android:id="@+id/q6_ubisoft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubisoft" />
+
+        <RadioButton
+            android:id="@+id/q6_capcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAPCOM" />
+        
+        <RadioButton
+            android:id="@+id/q6_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square" />        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click_submit"
+        android:text="submit" />
+
+    <TextView
+        android:id="@+id/xxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game Store</string>    
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="product1">FINAL FANTASY XIII</string>
+    <string name="product2">Call of Duty: Ghosts</string>
+    <string name="product3">Dead or Alive 5</string>
+    <string name="product4">Far Cry 3</string>
+    
+    <string name="price1">NT $1390   Quantity</string>
+    <string name="price2">NT $1790   Quantity</string>
+    <string name="price3">NT $1890   Quantity</string>
+    <string name="price4">NT $1590   Quantity</string>
+</resources>
