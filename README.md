@@ -1,2 +1,2 @@
-# College-C-programming
-C programming practice in college
+# College-programming
+
