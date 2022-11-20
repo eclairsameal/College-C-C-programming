@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- pswd_chk.html
+     A document for pswd_chk.ps
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Illustrate password checking> </title>
+    <script type = "text/javascript"  src = "pswd_chk.js" >
+    </script>
+  </head>
+  <body>
+    <h3> Password Input </h3>
+    <form id = "myForm"  action = "" >
+      <p>
+      
+      <label> Your password 
+        <input type = "password" id = "initial"  
+               size = "10" />
+      </label>
+      <br /><br />
+ 
+      <label> Verify password 
+        <input type = "password"  id = "second" 
+               size = "10" />
+      </label>
+      <br /><br />
+
+      <input type = "reset"  name = "reset" />
+      <input type = "submit"  name = "submit" />
+      </p>
+    </form>
+
+<!-- Script for registering the event handlers  -->
+    <script type = "text/javascript"  src = "pswd_chkr.js">
+    </script>
+
+  </body>
+</html>

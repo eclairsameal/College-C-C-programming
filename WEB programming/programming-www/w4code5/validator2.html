@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- validator2.html
+     A document for validator2.js
+     Note: This document does not work with IE6
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Illustrate form input validation with DOM 2> </title>
+    <script type = "text/javascript"  src = "validator2.js" >
+    </script>
+  </head>
+  <body>
+    <h3> Customer Information </h3>
+    <form action = "">
+      <p>
+        <label>
+          <input type = "text"  id = "custName" />
+           Name (last name, first name, middle initial)
+        </label>
+        <br /><br />
+
+        <label>
+          <input type = "text"  id = "phone" />
+          Phone number (ddd-ddd-dddd)
+        </label>
+        <br /><br />
+
+        <input type = "reset" />
+        <input type = "submit"  id = "submitButton" />
+      </p>
+    </form>
+    <script type = "text/javascript"  src = "validator2r.js" >
+    </script>
+
+  </body>
+</html>
