@@ -1,0 +1,29 @@
+<!-- This is a build file for ant  -->
+
+<project name="DefaultProjectName">
+
+  <property name="build" value="build"/>
+  <property name="src" value="examples/ejb20/relationships/many2many"/>
+
+  <target name="prepare">
+    <mkdir dir="${build}"/>
+    <tstamp/>
+  </target>
+
+  <target name="BuildEjbDescriptors" depends="prepare">
+    <javadoc sourcefiles="${src}/*Bean.java"
+           sourcepath="${src}"
+           destdir="${src}"
+           doclet="EJBGen"
+           docletpath="../../ejbgen.jar">
+    </javadoc>
+  </target>
+
+  <target name="compile" depends="BuildEjbDescriptors">
+    <javac srcdir="${src}" destdir="${build}" />
+  </target>
+
+  <target name="default" depends="compile">
+  </target>
+
+</project>

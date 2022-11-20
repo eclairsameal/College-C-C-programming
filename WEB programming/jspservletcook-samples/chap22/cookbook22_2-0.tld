@@ -1,0 +1,47 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">
+
+<tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>cbck</short-name>
+    <uri>jspservletcookbook.com.tags</uri>
+    <description>Cookbook custom tags</description>
+	
+	<listener>
+	<listener-class>com.jspservletcookbook.ReqListener</listener-class>
+    </listener>  
+
+<tag>
+        <name>logo</name>
+        <tag-class>com.jspservletcookbook.LogoTag</tag-class>
+        <body-content>scriptless</body-content>
+        <description>This tag writes a logo inside the JSP.</description>
+        <attribute>
+            <name>heading</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>The heading level for the logo; 1 through 6.</description>
+        </attribute>
+        
+        <attribute>
+            <name>image</name>
+		    <required>true</required>
+		    <rtexprvalue>true</rtexprvalue>
+		    <description>The image name for the logo.</description>
+        </attribute>
+		
+		 <attribute>
+            <name>width</name>
+		    <required>true</required>
+		    <rtexprvalue>true</rtexprvalue>
+		    <description>The image width for the logo.</description>
+        </attribute>
+		
+		 <attribute>
+            <name>height</name>
+		    <required>true</required>
+		    <rtexprvalue>true</rtexprvalue>
+		    <description>The image height for the logo.</description>
+        </attribute>
+    </tag>
+
+</taglib>

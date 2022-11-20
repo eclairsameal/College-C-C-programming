@@ -1,0 +1,13 @@
+<!DOCTYPE weblogic-ejb-jar PUBLIC '-//BEA Systems, Inc.//DTD WebLogic 7.0.0 EJB//EN' 'http://www.bea.com/servers/wls700/dtd/weblogic-ejb-jar.dtd'>
+
+<weblogic-ejb-jar>
+  <weblogic-enterprise-bean>
+    <ejb-name>AbbreviationEjb</ejb-name>
+    <stateless-session-descriptor>
+	    <initial-beans-in-free-pool>1</initial-beans-in-free-pool>
+    </stateless-session-descriptor>
+    <jndi-name>AbbrevHome</jndi-name>
+    <local-jndi-name>AbbrevLocalHome</local-jndi-name>
+  </weblogic-enterprise-bean>
+</weblogic-ejb-jar>
+
