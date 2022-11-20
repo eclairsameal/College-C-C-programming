@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ballot.html
+     Presents a ballot to the user and calls
+     the VoteCounter servlet for form handling
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head> <title> Ballot </title>
+  </head>
+  <body>
+    <form action = "http://localhost/servlet/VoteCounter"
+          method = "post">
+      <h3> Please choose one candidate for dogcatcher </h3>
+      <p>
+        <input type = "radio"  name = "vote"  value = "Dogman" /> 
+        Daren Dogman <br />
+        <input type = "radio"  name = "vote"  
+               value = "Taildragger" /> 
+        Timmy Taildragger <br/>
+        <input type = "radio"  name = "vote"  value = "Dogpile" /> 
+        Don Dogpile <br />
+      </p><p>
+        <input type = "submit"  value = "Submit ballot" />
+      </p>
+    </form>
+  </body>
+</html>

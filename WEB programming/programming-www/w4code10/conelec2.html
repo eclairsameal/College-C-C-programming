@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- conelec2.html
+     A simplified version of the consumer electronics 
+     survey form from chapter 10.
+     This version uses a servlet for processing the form data
+   -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Consumer Electronics Purchasing Survey </title>
+  </head>
+  <body>
+    <form action = "http://localhost/servlet/Survey" 
+          method = "post">
+      <h2> Welcome to the Consumer Electronics Purchasing Survey
+      </h2>
+      <p />
+
+      <h4> Your Gender: </h4>
+      <p>
+        <input type = "radio"  name = "gender"  value = "female" 
+               checked = "checked" />
+        Female <br />
+        <input type = "radio"  name = "gender"  value = "male" /> 
+        Male <br /> <br /> <br />
+      </p>
+      <h4> Your Next Consumer Electronics Purchase will be: </h4>
+      <p>
+        <input type = "radio"  name ="vote"  value="0" /> 
+        Conventional TV <br />
+        <input type = "radio"  name ="vote"  value="1" /> 
+        HDTV <br />
+        <input type = "radio"  name ="vote"  value="2" /> 
+        VCR <br />
+        <input type = "radio"  name ="vote"  value="3" /> 
+        CD player <br />
+        <input type = "radio"  name ="vote"  value="4" /> 
+        Mini CD player/recorder <br />
+        <input type = "radio"  name ="vote"  value="5" /> 
+        DVD player <br />
+        <input type = "radio"  name="vote"  value="6" 
+               checked = "checked" /> 
+        Other <br /> <br />
+
+        <input type = "submit"  value = "Submit Order" />
+        <input type = "reset"  value = "Clear Order Form" />
+      </p>
+    </form>
+  </body>
+</html>

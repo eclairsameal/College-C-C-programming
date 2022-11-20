@@ -1,0 +1,36 @@
+<?xml version = "1.0"  encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- where.html
+     Uses where.js
+     Illustrates x and y coordinates of the mouse cursor
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Where is the cursor? </title>
+    <script type = "text/javascript"  src = "where.js" >
+    </script>
+  </head>
+  <body onclick = "findIt(event)">
+    <form action = "">
+      <p> 
+        Within the client area: <br />
+        x:
+        <input type = "text"  id = "xcoor1"  size = "4" />
+        y:
+        <input type = "text"  id = "ycoor1"  size = "4" />
+        <br /><br />
+        Relative to the origin of the screen coordinate system:
+        <br />
+        x:
+        <input type = "text"  id = "xcoor2"  size = "4" />
+        y:
+        <input type = "text"  id = "ycoor2"  size = "4" />
+      </p>
+    </form>
+    <p>
+      <img src = "../images/c172.gif"  alt = "(Picture of C172)" />
+    </p>
+  </body>
+</html>

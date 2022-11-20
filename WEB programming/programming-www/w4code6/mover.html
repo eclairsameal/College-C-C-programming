@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- mover.html
+     Uses mover.js to move an image within a document
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Moving elements </title>
+    <script type = "text/javascript"  src = "mover.js" >
+    </script>
+  </head>
+  <body>
+    <form action = "">
+      <p>
+        <label>
+          x coordinate: 
+          <input type = "text"  id = "leftCoord" size = "3" />
+        </label>
+        <br />
+        <label>
+          y coordinate: 
+          <input type = "text"  id = "topCoord" size = "3" />
+        </label>
+        <br />
+        <input type = "button"  value = "Move it"
+               onclick = 
+                 "moveIt('nebula', 
+                   document.getElementById('topCoord').value, 
+                   document.getElementById('leftCoord').value)" />
+      </p>
+    </form>
+    <div id = "nebula"  style = "position: absolute;
+         top: 115px; left: 0;">
+      <img src = "../images/ngc604.jpg"  
+           alt = "(Picture of a nebula)" /> 
+    </div>
+  </body>
+</html>

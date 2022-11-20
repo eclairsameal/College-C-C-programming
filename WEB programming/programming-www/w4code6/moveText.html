@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- moveText.html
+     Illustrates a moving text element
+     Uses the JavaScript from file moveTextfuns.js
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Moving text </title>
+     <script type = "text/javascript"
+             src = "moveTextfuns.js">
+     </script>
+  </head>
+
+<!-- Call the initializing function on load, giving the 
+      destination coordinates for the text to be moved
+      -->
+
+  <body onload = "initText()">
+
+<!-- The text to be moved, including its initial position -->
+
+    <p>
+      <span id = 'theText' style =
+                "position: absolute; left: 100px; top: 100px; 
+                 font: bold 20pt 'Times Roman'; 
+                 color: blue;"> Jump in the lake!
+      </span>
+    </p>
+  </body>
+</html>
