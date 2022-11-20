@@ -1,0 +1,19 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:c="http://java.sun.com/jstl/core"
+    xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+
+    <jsp:directive.page contentType="text/html"/>
+    <html>
+   <jsp:directive.include file="WEB-INF/jspf/header_tag.jspf" />
+
+    <body>
+    <h2>Welcome to our Portal <c:out value="
+        ${param.fname}" /><jsp:text> </jsp:text> 
+          <c:out value="${param.lname}" /></h2>
+    <jsp:useBean id="dateString" class="java.util.Date"/>
+    <jsp:text>The time is </jsp:text> <c:out value="${dateString}" />.
+    <br /><br />
+    </body>
+    </html>
+</jsp:root>
+ 
