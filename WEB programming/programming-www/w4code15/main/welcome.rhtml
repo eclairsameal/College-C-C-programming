@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- welcome.rhtml - initial view for the cars application 
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> welcome template for cars </title>
+  </head>
+  <body>
+
+<!-- The initial information -->
+    <p>
+      <h1> Aidan's Used Car Lot </h1>
+      <h2> Welcome to our home document </h2>
+      We currently have <%= @num_cars %> used Corvettes listed <br />
+      The cars are in <%= @num_states %> different states <br /> <br />
+      To request information on available cars, please fill out <br />
+      the following form and submit it 
+    </p>
+
+<!-- The form to collect input from the user about their interests -->
+
+    <form action = "result"  method = "post" >
+      From year: <input type = "text"  size = "4"  name = "year1" /> 
+      To year: <input type = "text"  size = "4"  name = "year2" /> 
+      Body style: <input type = "text"  size = 12  name = "body" /> <br />
+      <input  type = "submit"  value = "Submit request" /> <br />
+      <input type = "reset"  value = "Reset form" /> <br />
+    </form>
+    <hr/>
+    <p> Copyright 2007, AUCL, Inc. </p>
+  </body>
+</html>

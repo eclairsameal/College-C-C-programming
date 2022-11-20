@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- result.rhtml - the result of the user request for
+                    information about cars  
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> result.rhtml </title>
+  </head>
+  <body>
+    <p>
+
+<!-- Display what the user asked for -->
+
+      Cars from <%= @year1 %> to <%= @year2 %>
+       with the <%= @body %> body style 
+    </p>
+
+<!-- Display the results of the request in a table -->
+
+    <table border = "border">
+      <tr>
+        <th> Body Style </th>
+        <th> Miles </th>
+        <th> Year </th>
+        <th> State </th>
+      </tr>
+
+<!-- Put the cars in @carz in the table -->
+
+      <% @carz.each do |car|
+        @year = car.year
+        @body_style = car.body_style 
+        @miles = car.miles
+        @state_row = @statez[car.state_id]
+        @state = @state_row.state %>
+        <tr>
+          <td> <%= @body_style %> </td>
+          <td> <%= @miles %> </td>
+          <td> <%= @year %> </td>
+          <td> <%= @state %> </td> 
+        </tr>
+      <% end %> <!-- end of do loop -->
+    </table>
+  </body>
+</html>

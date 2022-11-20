@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- timer.rhtml - Response document for rails2 - 
+     Hello World + time 
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> rails2 example </title>
+  </head>
+  <body>
+    <h2> Hello World! </h2>
+    <p>
+      It is now <%= t = Time.now %> <br />
+      Number of seconds since midnight:
+      <%= t.hour * 3600 + t.min * 60 + t.sec %>
+    </p>
+  </body>
+</html>

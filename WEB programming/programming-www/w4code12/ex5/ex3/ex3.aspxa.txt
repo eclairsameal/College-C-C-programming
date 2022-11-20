@@ -1,0 +1,33 @@
+<!-- ex3.aspx
+     A simple example of an ASP.NET document with HTML controls.
+     It uses textboxes to get the name and age of the client,
+     which are then displayed.
+     -->     
+
+
+<html>
+  <head> <title> Ex3 </title>
+  </head>
+  <body>
+    <form name="_ct10" method="post" action="ex3.aspx id="_ct10">
+ <input type="hidden" name="_VIEWSTATE"
+ value="dDwxMTYxOTE0NDI7Oz4rK1loC8s5yMYUcQVQuGFG7BGQzg==" />
+
+      <p>
+        Your name: 
+        <input type = "text"  id = "name"  runat = "server" />
+        <br />
+        Your age:
+        <input type = "text"  id = "age"  runat = "server" />
+        <br />
+        <input type = "submit"  value = "Submit" />
+      <br />
+      
+        Hello mike <br />
+        You are 47 years old <br />
+        
+      </p>
+    </form>
+  </body>
+</html>
+

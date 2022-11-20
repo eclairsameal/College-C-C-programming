@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- base.rhtml - the layout document for the cars
+                  application -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Cars </title>
+  </head>
+  <body>
+    <h1> Aidan's Used Car Lot </h1>
+    <%= @content_for_layout %>
+    <hr/>
+    <p> Copyright 2007, AUCL, Inc. </p>
+  </body>
+</html>

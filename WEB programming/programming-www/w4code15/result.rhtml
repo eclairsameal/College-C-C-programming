@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- result.rhtml - result view for the popcorn application 
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> result.rhtml </title>
+  <head>
+  <body>
+
+<!-- Display the customer information -->
+
+    <h4> Customer: </h4>
+    <%= @name %> <br /> <%= @street %> <br />
+    <%= @city %>
+    <p /> <p />
+
+<!-- Display a table of the order information -->
+
+    <table border = "border">
+      <caption> Order Information </caption>
+      <tr>
+        <th> Product </th>
+        <th> Unit Price </th>
+        <th> Quantity </th>
+        <th> Item Cost </th>
+      </tr>
+      <tr align = "center">
+        <td> Unpopped Popcorn </td>
+        <td> $3.00 </td>
+        <td> <%= @unpop %> </td>
+        <td> $<%= @unpop_cost %> </td>
+      </tr>
+      <tr align = "center">
+        <td> Caramel Popcorn </td>
+        <td> $3.50 </td>
+        <td> <%= @caramel %> </td>
+        <td> $<%= @caramel_cost %> </td>
+      </tr>
+      <tr align = "center">
+        <td> Caramel Nut Popcorn </td>
+        <td> $4.50 </td>
+        <td> <%= @caramelnut %> </td>
+        <td> $<%= @caramelnut_cost %> </td>
+      </tr>
+      <tr align = "center">
+        <td> Toffey Nut Popcorn </td>
+        <td> $5.00 </td>
+        <td> <%= @toffeynut %> </td>
+        <td> $<%= @toffeynut_cost %> </td>
+      </tr>
+    </table>
+    <p /><p />
+
+<!-- Display the number of items ordered, the total cost,and
+     the chosen method of payment   -->
+
+    <p>
+      You ordered <%= @total_items %> popcorn items <br />
+      The total cost of your order is $<%= @total_price %> <br />
+      Your chosen method of payment is: <%= @payment %> <br /> 
+      Thank you for your order
+    </p>
+  </body>
+</html>

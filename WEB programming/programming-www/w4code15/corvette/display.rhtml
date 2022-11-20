@@ -1,0 +1,26 @@
+<!-- display.rhtml -->
+<html>
+  <head>
+    <title> display.rhtml </title>
+  </head>
+  <body>
+    <% @autos = Corvette.find(:all) %>
+    <h1> Corvettes for sale </h1>
+    <table border = "border">
+      <tr>
+        <th> Body Style </th>
+        <th> Miles </th>
+        <th> Year </th>
+        <th> State </th>
+      </tr>
+      <% @autos.each do |oneCar| %>
+      <tr>
+        <td> <%= oneCar.body_style %> </td>
+        <td> <%= oneCar.miles %> </td> 
+        <td> <%= oneCar.year %> </td>
+        <td> <%= oneCar.state_id %> </td>
+       </tr>
+       <% end %>
+    </table>
+  </body>
+</html>
