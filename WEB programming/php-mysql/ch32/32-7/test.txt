@@ -1,0 +1,30 @@
+create database member;
+use member;
+
+# Table structure for table 'bbs'
+# id 代碼, r_date 資料建立日期,unit 登錄單位,topic 主題, ip 登錄電腦的 ip , content 公告內容,l_date 截止日期
+
+create table bbs (
+id integer primary key auto_increment , 
+r_date text,
+unit text,
+topic text,
+ip text,
+content text,
+l_date text);
+
+# Table structure for table 'users'
+
+CREATE TABLE users (
+  id varchar(5),
+  name varchar(20),
+  password varchar(8),
+  list varchar(4)
+);
+
+
+use mysql;
+INSERT INTO user VALUES('localhost','root','test','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','','','','',0,0,0);
+
+
+INSERT INTO db VALUES('localhost','number','','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');

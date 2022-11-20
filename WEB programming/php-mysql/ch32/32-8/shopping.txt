@@ -1,0 +1,9 @@
+CREATE TABLE shopping ( 
+  session tinytext NOT NULL, 
+  product tinytext NOT NULL, 
+  quantity tinytext NOT NULL, 
+  card tinytext NOT NULL, 
+  id int(4) DEFAULT '0' NOT NULL auto_increment, 
+  KEY id (id), 
+  PRIMARY KEY (id) 
+); 
