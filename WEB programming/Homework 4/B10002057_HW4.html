@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Online Store</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <form action = "./B10002057_HW4.php" method = "POST">
+    <table>
+      <tr><td>NAME:</td><td> <input type = "text" name = "name"></td></tr>   
+      <tr><td>ADDRESS:</td> <td><input type = "text" name = "address"></td></tr>
+      <tr><td>CITY:</td><td> <input type = "text" name = "city"></td></tr>
+      <tr><td>PHONE NUMBER:</td><td> <input type = "text" name = "p_n"></td></tr>
+    </table>
+
+    <table border = "3">
+      <tr align = "center">
+        <td><b>Product</b></td> <td><b>Price</b></td> <td><b>Quantity</b></td> <td>&nbsp</td>
+      </tr>
+      <tr>
+        <td>LIGHTNING RETURNS FINAL FANTASY XIII</td> <td>NT $1390 </td> <td><input type = "text" name = "product0"></td>	
+          <td><img src="FF13.JPG" width="180" height="240"></td>  
+      </tr>
+      <tr>
+        <td>Assassin's Creed IV: Black Flag</td> <td>NT $1390 </td> <td><input type = "text" name = "product1"></td>
+          <td><img src="AC4.JPG" width="180" height="240"></td>	
+      </tr>
+      <tr>
+        <td>Call of Duty: Ghosts</td> <td>NT $1790 </td> <td><input type = "text" name = "product2"></td>
+          <td><img src="COD.JPG" width="180" height="240"></td>	
+      </tr>
+      <tr>
+        <td>Dead or Alive 5</td> <td>NT $1890 </td> <td><input type = "text" name = "product3"></td>
+          <td><img src="DOA5.JPG" width="180" height="240"></td>	
+      </tr>
+      <tr>
+        <td>Far Cry 3</td> <td>NT $1590 </td> <td><input type = "text" name = "product4"></td>
+          <td><img src="FC3.JPG" width="180" height="240"></td>	
+      </tr>
+    </table>
+
+    <h2>Payment Method</h2>
+    <input type = "radio" name = "payment" value = "visa" checked = "checked"/>Visa<br/>
+    <input type = "radio" name = "payment" value = "Master Card"/>Master Card<br/>
+    <input type = "radio" name = "payment" value = "discover"/>Discover<br/>
+    <input type = "radio" name = "payment" value = "check"/>Check<br/>
+    
+    <input type = "submit" value = "Submit Order"/>
+    <input type = "reset" value = "Clear Order Form"/>
+  </form>
+</body>
+</html>
